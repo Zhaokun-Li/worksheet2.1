@@ -31,6 +31,5 @@ D;JEQ
 M=1       
 @R1
 M=0
-(END)
 @END
 0;JMP
