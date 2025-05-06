@@ -24,6 +24,8 @@ D=M        //get negative values from R0
 D=D-M
 @MIN_VALUE
 D;JEQ      //If R0==-32768, jump to the MIN_VALUE label
+@R0
+D=M        //get negative values from R0 again
 D=!D
 D=D+1      //convert negative numbers to positive, take the inverse and add one
 @R1
