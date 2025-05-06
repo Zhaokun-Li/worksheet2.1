@@ -4,8 +4,8 @@ M=0        //initialize R2 to 0, indicating that the default R0 is not negative
 M=0        //initialize R3 to 0, indicating that the default R0 is not the minimum value
 @R0
 D=M        //load the value of R0 into the D register
-@R8
-M=-32767
+//@R8
+//M=-32767
 @NEGATIVE  
 D;JLT      //if R0<0, jump to the NEGATIVE label
 (POSITIVE)
