@@ -5,7 +5,7 @@ M=0        //initialize R3 to 0, indicating that the default R0 is not the minim
 @R0
 D=M        //load the value of R0 into the D register
 @R4
-M=32767
+M=-32767
 @NEGATIVE  
 D;JLT      //if R0<0, jump to the NEGATIVE label
 (POSITIVE)
@@ -20,8 +20,8 @@ M=D        //assign the value of R0 to R1
 M=1        //set R2=1, indicating that the input value is negative
 @R0
 D=M        //get negative values from R0
-@R4
-D=D-M
+//@R4
+//D=D-M
 @MIN_VALUE
 D;JEQ      //If R0==-32768, jump to the MIN_VALUE label
 @R0
