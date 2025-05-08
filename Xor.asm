@@ -18,6 +18,6 @@ M=D       //save the reverse result back to R4. Now R4=~(R0&R1)
 @R3   
 D=M       //take out the value of R3 and place it in D
 @R4
-D=D&M     //operate AND operation between D and R4. D=(R0|R1)&~(R0&R1)
+D=D&M     //operate AND operation on D and R4. D=(R0|R1)&~(R0&R1)
 @R2      
 M=D       //store the final result in R2
